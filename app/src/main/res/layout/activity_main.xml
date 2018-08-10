@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".interfaz.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="INGRESE MODELO"
+        android:textAlignment="center"
+        android:id="@+id/edtModelo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="INGRESE MARCA"
+        android:textAlignment="center"
+        android:id="@+id/edtMarca"
+        android:layout_below="@+id/edtModelo"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="INGRESE AÑO"
+        android:textAlignment="center"
+        android:id="@+id/edtAnio"
+        android:layout_below="@+id/edtMarca"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="INGRESE KMs"
+        android:textAlignment="center"
+        android:id="@+id/edtKms"
+        android:layout_below="@+id/edtAnio"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnGuardar"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtKms"
+
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        >
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUSCAR ID"
+        android:layout_alignParentBottom="true"
+
+        android:layout_toRightOf="@id/btnGuardar"
+        android:id="@+id/btnVer"
+
+
+        />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtID"
+            android:hint="INGRESE ID"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
