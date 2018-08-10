@@ -1,6 +1,7 @@
 package com.example.itmaster.mvcautos.listeners;
 
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.itmaster.mvcautos.interfaz.MainActivity;
 import com.example.itmaster.mvcautos.models.Auto;
@@ -25,5 +26,7 @@ public class ListenerBtnGuardar implements View.OnClickListener {
 
 
         context.getControladorAuto().guardarAuto(context.getUnAuto());
+
+        Toast.makeText(context, "Almacenado", Toast.LENGTH_SHORT).show();
     }
 }
