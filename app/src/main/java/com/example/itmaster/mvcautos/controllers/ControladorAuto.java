@@ -11,4 +11,19 @@ public class ControladorAuto {
     daoAuto.addAuto(unAuto);
 
     }
+
+    public Integer cantidadAutos(){
+        return daoAuto.CantAutos();
+    }
+
+    //
+    //    public Persona getPersona(Integer i){
+    //        return daoPersona.getPersona(i);
+    //    }//
+
+    public Auto obtenerAuto (Integer i){
+
+        return daoAuto.obtenerAuto(i);
+
+    }
 }

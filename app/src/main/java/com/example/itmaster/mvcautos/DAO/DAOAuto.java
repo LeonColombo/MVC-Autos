@@ -12,5 +12,14 @@ public class DAOAuto {
         autoArrayList.add(unAuto);
     }
 
+    public Integer CantAutos() {
+        return autoArrayList.size();
+    }
+//public Persona getPersona(Integer i){
+//        return personaArrayList.get(i);
+//    }//
 
+    public Auto obtenerAuto(Integer i) {
+        return autoArrayList.get(i) ;
+    }
 }
