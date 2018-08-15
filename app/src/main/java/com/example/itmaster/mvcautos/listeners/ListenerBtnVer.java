@@ -27,13 +27,13 @@ public class ListenerBtnVer implements View.OnClickListener {
 //    }//
     @Override
     public void onClick(View view) {
-        Integer id = Integer.valueOf(context.getBtnVer().getText().toString());
+        Integer id = Integer.valueOf(context.getEdtID().getText().toString());
         if (id < context.getControladorAuto().cantidadAutos()){
             if (context.getControladorAuto().cantidadAutos() !=0){
 
                 context.setUnAuto(context.getControladorAuto().obtenerAuto(id));
                 context.getEdtMarca().setText(context.getUnAuto().getMarca());
-                context.getEdtAnio().setText(context.getUnAuto().getAnio());
+                context.getEdtAnio().setText(context.getUnAuto().getAnio().toString());
             }
 
         }
